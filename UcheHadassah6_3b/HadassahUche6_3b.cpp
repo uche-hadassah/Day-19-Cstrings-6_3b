@@ -5,6 +5,7 @@ palindrome. Write a main program to test your function with a user-defined strin
 #include<cstring>
 using namespace std;
 const int MAX = 100;
+bool IsPalindrome(char[]);
 int main()
 {
 	char word[MAX];
@@ -12,6 +13,12 @@ int main()
 	cout << "Enter a word:";
 	cin >> word;
 	//I will add a condition to take a word not a string
+	
+}
+
+bool IsPalindrome(char[])
+{
+	int j;
 	for (j = 0; word[j] != '\0'; j++);//Gets the length of the word
 	while (i <= j - 1)
 	{
@@ -31,4 +38,5 @@ int main()
 	{
 		cout << "This is a palindrome";
 	}
+	return false;
 }
